@@ -1,0 +1,54 @@
+<div class="conteiner">
+    <!-- <h2 [innerText]="mensaje"></h2> -->
+    <!-- <app-lista-prueba [dataSource]="categorias">
+    </app-lista-prueba> -->
+    <!-- Hacer uso de la tabla de material para mostrar la tabla categoria -->
+    <div class="row mt-3">
+      <div class="col-6">
+          <h2>Listado de Artistas</h2>
+      </div>
+      <div class="col-6 text-end">
+          <button mat-raised-button color="primary" [routerLink]="['0']" >
+              <i class="fas fa-plus"></i> Agregar
+          </button>
+      </div>
+    </div>
+
+    <table mat-table [dataSource]="artista" class="mat-elevation-z8 w-100" >
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let artista"> {{artista.id}} </td>
+          </ng-container>
+        <!-- Nombre artista Column -->
+        <ng-container matColumnDef="artista">
+          <th mat-header-cell *matHeaderCellDef> Nombre artista </th>
+          <td mat-cell *matCellDef="let artista"> {{artista.nombre}} </td>
+        </ng-container>
+        <!-- Genero Column -->
+        <ng-container matColumnDef="genero">
+          <th mat-header-cell *matHeaderCellDef> Genero </th>
+          <td mat-cell *matCellDef="let artista"> {{artista.genero}} </td>
+        </ng-container>
+        <!-- Albunes Column -->
+        <ng-container matColumnDef="albunes">
+            <th mat-header-cell *matHeaderCellDef> Albunes </th>
+            <td mat-cell *matCellDef="let artista"> {{artista.albunes}} </td>
+          </ng-container>
+        <ng-container matColumnDef="acciones">
+          <th mat-header-cell *matHeaderCellDef>Acciones</th>
+          <td mat-cell *matCellDef="let artista">
+            <button mat-stroked-button routerLink="{{artista.id}}" class="me-3">
+              <mat-icon>edit</mat-icon> Editar
+            </button>
+            <button mat-stroked-button color="accent" (click)="borrar(artista)">
+              <mat-icon>delete</mat-icon> Eliminar
+            </button>
+          </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="columnasaMostrar"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnasaMostrar;"></tr>
+      </table>
+</div>

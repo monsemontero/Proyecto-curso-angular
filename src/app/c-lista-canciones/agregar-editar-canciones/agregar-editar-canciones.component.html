@@ -1,0 +1,60 @@
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col">
+            <h1>Agregar Cancion</h1>
+        </div>
+    </div>
+
+    <form [formGroup]="formulario" autocomplete="off" (ngSubmit)="guardar()">
+        <div class="row">
+            <div class="col-6">
+
+                <mat-form-field class="w-100">
+                    <mat-label>Titulo: </mat-label>
+                    <input matInput formControlName="titulo"  />
+                </mat-form-field>
+                <!-- <div *ngIf="(titulo?.dirty || titulo?.touched) && titulo?.errors">
+                    <mat-error *ngIf="titulo?.errors?.['required']">El nombre de la categoria es requerido</mat-error>
+                    <mat-error *ngIf="titulo?.errors?.['minLength']">El nombre de la categoria debe contener al menos 5 caracteres</mat-error>
+                    <mat-error *ngIf="titulo?.errors?.['maxLength']">El nombre de la categoria no debe superar los 100 caracteres</mat-error>
+                </div> -->
+                <mat-form-field class="w-100">
+                    <mat-label>Artista: </mat-label>
+                    <input matInput formControlName="artista"  />
+                </mat-form-field>
+                <!-- <div *ngIf="(artista?.dirty || artista?.touched) && artista?.errors">
+                    <mat-error *ngIf="artista?.errors?.['required']">El nombre de la categoria es requerido</mat-error>
+                    <mat-error *ngIf="artista?.errors?.['minLength']">El nombre de la categoria debe contener al menos 5 caracteres</mat-error>
+                    <mat-error *ngIf="artista?.errors?.['maxLength']">El nombre de la categoria no debe superar los 100 caracteres</mat-error>
+                </div> -->
+                <mat-form-field class="w-100">
+                    <mat-label>Genero: </mat-label>
+                    <input matInput formControlName="genero"  />
+                </mat-form-field>
+                <!-- <div *ngIf="(genero?.dirty || genero?.touched) && genero?.errors">
+                    <mat-error *ngIf="genero?.errors?.['required']">El nombre de la categoria es requerido</mat-error>
+                    <mat-error *ngIf="genero?.errors?.['minLength']">El nombre de la categoria debe contener al menos 5 caracteres</mat-error>
+                    <mat-error *ngIf="genero?.errors?.['maxLength']">El nombre de la categoria no debe superar los 100 caracteres</mat-error>
+                </div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button mat-raised-button
+                color="primary"
+                type="button"
+                (click)="guardar()">
+                Guardar <mat-icon>save</mat-icon>
+            </button>
+            <button
+                    mat-raised-button
+                    color="secondary"
+                    [routerLink]="['/canciones']"
+                    type="button">
+                    Regresar <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

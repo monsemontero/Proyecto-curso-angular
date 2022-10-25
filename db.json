@@ -1,0 +1,109 @@
+{
+  "listaCanciones": [
+    {
+      "id": 1,
+      "titulo": "Position",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 2,
+      "titulo": "7 ring",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 3,
+      "titulo": "Save your tears",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 4,
+      "titulo": "Stuck with u",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 5,
+      "titulo": "One last time",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 6,
+      "titulo": "thank u, next",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 7,
+      "titulo": "34+35",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 8,
+      "titulo": "Dangerous woman",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 9,
+      "titulo": "Bang bang",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "id": 10,
+      "titulo": "Everyday",
+      "artista": "Ariana Grande",
+      "genero": "pop"
+    },
+    {
+      "titulo": "Position2",
+      "artista": "Ariana G",
+      "genero": "Pop",
+      "id": 12
+    }
+  ],
+  "artistas": [
+    {
+      "id": 1,
+      "nombre": "Ariana Grande",
+      "genero": "pop",
+      "albunes": 8
+    },
+    {
+      "id": 2,
+      "nombre": "Selena Gomez",
+      "genero": "pop",
+      "albunes": 4
+    },
+    {
+      "id": 3,
+      "nombre": "Camila Cabello",
+      "genero": "pop",
+      "albunes": 3
+    },
+    {
+      "id": 4,
+      "nombre": "Coldplay",
+      "genero": "pop",
+      "albunes": 15
+    },
+    {
+      "id": 5,
+      "nombre": "Alex Porat",
+      "genero": "pop",
+      "albunes": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "monse@uv.mx",
+      "password": "$2a$10$.nMxF25QIf1hFpqNwozFMub9JkeH1icWcntN00JiqczfTmwMZTx0C",
+      "id": 1
+    }
+  ]
+}
